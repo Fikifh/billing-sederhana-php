@@ -4,7 +4,8 @@
 
      $jamAkhir = $_POST['jamAkhir'];
      $menitAkhir = $_POST['menitAkhir'];
-     $member = false;
+     $member = $_POST['cekmember'];
+     //$member = false;
      $harga = null;
      function durasi($jam, $menit){
          $durasi = 60 * $jam + $menit;
@@ -15,7 +16,7 @@
         $durasi = $jam;
         return $durasi;
      }     
-     if($member == true){
+     if($member == "true"){
         $durasiAwal = durasi($jamAwal, $menitAwal);
         $durasiAkhir = durasi($jamAkhir, $menitAkhir);
         $durasi = $durasiAkhir - $durasiAwal;
@@ -53,7 +54,7 @@
             if($harga <= 0){
                 echo "<p>Waktu Selesai tidak boleh kurang dari waktu mulai !</p>";
             }else{
-                echo "<h1>Total yang Harus Anda Bayar adalah : </h1>"."<h2>Rp. ".$harga."</h2>";
+                echo "<h1>Total yang Harus Anda Bayar adalah : </h1>"."<h2>Rp. ".$harga."</h2> ";
             }
             ?>
         </div>

@@ -33,6 +33,11 @@
                     <td><input type="text" name="jamAkhir" id="jamAkhir"></td>
                     <td><input type="text" name="menitAkhir" id="menitAkhir"></td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="cekmember" id="member" value="true">Member</td>
+                    <td><input type="radio" name="cekmember" id="nonmember" value="false">Non Member</td>
+                </tr>
             </table>
             <input type="submit" value="Hitung Ongkos">
         </form>        
