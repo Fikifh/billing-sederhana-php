@@ -45,6 +45,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Cek Harga</title>
 </head>
 <body>
@@ -52,9 +53,10 @@
         <div class="total">                        
             <?php 
             if($harga <= 0){
-                echo "<p>Waktu Selesai tidak boleh kurang dari waktu mulai !</p>";
+                echo "<p>Waktu Mulai dan Akhir Anda Tidak Benar !</p>";
+                echo "<a href='http://localhost/billing-sederhana-php-master/'>Back</a>";
             }else{
-                echo "<h1>Total yang Harus Anda Bayar adalah : </h1>"."<h2>Rp. ".$harga."</h2> ";
+                echo "<h1>Total yang Harus Anda Bayar adalah : </h1>"."<h2>Rp. ".$harga."</h2> ";                
             }
             ?>
         </div>
@@ -73,5 +75,6 @@
             return true;
         }
     }
+    
 </script>
 </html>
